@@ -3,12 +3,12 @@ namespace DataStructures
 {
     public class Stack<E>
     {
-        E[] InnerArray { get; set; }
+        DoublyLinkedList<E> InnerList { get; set; }
 
         
         public Stack()
         {
-            InnerArray = new E[10];
+            InnerList = new DoublyLinkedList<E>();
         }
 
 
