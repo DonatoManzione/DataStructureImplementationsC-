@@ -48,6 +48,14 @@ namespace DataStructures
                 First.Next = null;
                 Count = 1;
             }
+            else if (First.Next == null)
+            {
+                Last = newNode;
+                First.Next = Last;
+                Last.Next = null;
+                Last.Previous = First;
+                Count = 2;
+            }
             else
             {
                 DoublyLinkedListNode<E> temp = First;

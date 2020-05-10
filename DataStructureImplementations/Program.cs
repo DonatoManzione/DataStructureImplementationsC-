@@ -8,22 +8,24 @@ namespace DataStructures
         {
             
             LinkedList<string> myList = new LinkedList<string>();
-            myList.AddFirst("HELLO");
-            myList.AddFirst("Donato");
+            myList.AddLast("HELLO");
+            myList.AddLast("Donato");
+            myList.AddLast("Developer");
+            myList.Remove("HELLO");
             
-            Console.WriteLine(myList.Find("HELLO").Data);
+
 
             PrintListForward(myList);
 
             DoublyLinkedList<string> myList2 = new DoublyLinkedList<string>();
-            myList2.AddFirst("Print");
-            myList2.AddFirst("This");
-            myList2.AddFirst("Backward");
-            myList2.AddFirst("But not this");
+            myList2.AddLast("Print");
+            myList2.AddLast("This");
+            myList2.AddLast("Backward");
+            myList2.AddLast("But not this");
             myList2.Remove("But not this");
-            myList2.Remove("Backward");
+            
 
-            PrintListForward(myList2);
+            PrintListBackward(myList2);
 
 
 
@@ -55,6 +57,20 @@ namespace DataStructures
             {
                 Console.WriteLine(currentNode.Data);
                 currentNode = currentNode.Next;
+            }
+
+        }
+        static void PrintListBackward(DoublyLinkedList<string> list)
+        {
+            DoublyLinkedListNode<string> currentNode = list.Last;
+            if (currentNode == null)
+            {
+                throw new EmptyListException();
+            }
+            while (currentNode != null)
+            {
+                Console.WriteLine(currentNode.Data);
+                currentNode = currentNode.Previous;
             }
 
         }
