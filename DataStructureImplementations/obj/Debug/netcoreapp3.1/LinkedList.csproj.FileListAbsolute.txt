@@ -1,0 +1,12 @@
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/LinkedList.deps.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/LinkedList.runtimeconfig.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/LinkedList.runtimeconfig.dev.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/LinkedList.dll
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/LinkedList.pdb
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.csprojAssemblyReference.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.csproj.CoreCompileInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.AssemblyInfoInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.AssemblyInfo.cs
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.dll
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.pdb
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/LinkedList.genruntimeconfig.cache

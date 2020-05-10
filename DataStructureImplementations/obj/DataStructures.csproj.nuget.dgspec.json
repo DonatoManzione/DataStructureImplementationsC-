@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/DataStructures.csproj": {}
+  },
+  "projects": {
+    "/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/DataStructures.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/DataStructures.csproj",
+        "projectName": "DataStructures",
+        "projectPath": "/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/DataStructures.csproj",
+        "packagesPath": "/Users/edda/.nuget/packages/",
+        "outputPath": "/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/edda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/edda/Projects/DataStructureImplementations/DSExceptions/DSExceptions.csproj": {
+                "projectPath": "/Users/edda/Projects/DataStructureImplementations/DSExceptions/DSExceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/edda/Projects/DataStructureImplementations/DSExceptions/DSExceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/edda/Projects/DataStructureImplementations/DSExceptions/DSExceptions.csproj",
+        "projectName": "DSExceptions",
+        "projectPath": "/Users/edda/Projects/DataStructureImplementations/DSExceptions/DSExceptions.csproj",
+        "packagesPath": "/Users/edda/.nuget/packages/",
+        "outputPath": "/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/edda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
