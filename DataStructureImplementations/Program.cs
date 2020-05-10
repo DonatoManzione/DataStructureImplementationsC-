@@ -6,7 +6,7 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            //System.Collections.Generic.LinkedList<string> sampleList = new System.Collections.Generic.LinkedList<string>();
+            System.Collections.Generic.LinkedList<string> sampleList = new System.Collections.Generic.LinkedList<string>();
             
             LinkedList<string> myList = new LinkedList<string>();
             myList.AddLast("HELLO");
@@ -14,8 +14,9 @@ namespace DataStructures
             myList.AddLast("Donato");
             
             myList.Remove("Donato");
-            
-             
+
+            Console.WriteLine(myList.Find("HELLO").Data);
+            myList.Find("Donato");
             PrintList(myList);
 
 

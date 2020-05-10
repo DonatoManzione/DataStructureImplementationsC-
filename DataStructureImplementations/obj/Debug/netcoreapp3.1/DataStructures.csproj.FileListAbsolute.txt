@@ -1,0 +1,15 @@
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DataStructures.deps.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DataStructures.runtimeconfig.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DataStructures.runtimeconfig.dev.json
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DataStructures.dll
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DataStructures.pdb
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DSExceptions.dll
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/bin/Debug/netcoreapp3.1/DSExceptions.pdb
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.csprojAssemblyReference.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.csproj.CoreCompileInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.AssemblyInfoInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.AssemblyInfo.cs
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.csproj.CopyComplete
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.dll
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.pdb
+/Users/edda/Projects/DataStructureImplementations/DataStructureImplementations/obj/Debug/netcoreapp3.1/DataStructures.genruntimeconfig.cache

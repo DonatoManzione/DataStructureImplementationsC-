@@ -2,14 +2,15 @@
   <MonoDevelop.Ide.ItemProperties.DSExceptions FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="DataStructureImplementations/DoublyLinkedList.cs">
     <Files>
-      <File FileName="DataStructureImplementations/Program.cs" Line="2" Column="1" />
-      <File FileName="DataStructureImplementations/LinkedList.cs" Line="69" Column="34" />
-      <File FileName="DataStructureImplementations/Stack.cs" Line="8" Column="1" />
+      <File FileName="DataStructureImplementations/Program.cs" Line="10" Column="13" />
+      <File FileName="DataStructureImplementations/LinkedList.cs" Line="5" Column="6" />
+      <File FileName="DataStructureImplementations/Stack.cs" Line="14" Column="1" />
       <File FileName="DataStructureImplementations/NoSuchElementException.cs" Line="7" Column="11" />
       <File FileName="DataStructureImplementations/EmptyListException.cs" Line="7" Column="11" />
       <File FileName="DataStructureImplementations/EmptyStackException.cs" Line="7" Column="11" />
       <File FileName="DSExceptions/Program.cs" Line="1" Column="1" />
-      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" Line="3" Column="41" />
+      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" Line="10" Column="36" />
+      <File FileName="DataStructureImplementations/IList.cs" Line="9" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

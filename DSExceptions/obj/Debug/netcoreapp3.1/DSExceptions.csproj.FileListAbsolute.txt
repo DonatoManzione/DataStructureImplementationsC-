@@ -1,0 +1,12 @@
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/bin/Debug/netcoreapp3.1/DSExceptions.deps.json
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/bin/Debug/netcoreapp3.1/DSExceptions.runtimeconfig.json
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/bin/Debug/netcoreapp3.1/DSExceptions.runtimeconfig.dev.json
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/bin/Debug/netcoreapp3.1/DSExceptions.dll
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/bin/Debug/netcoreapp3.1/DSExceptions.pdb
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.csprojAssemblyReference.cache
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.csproj.CoreCompileInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.AssemblyInfoInputs.cache
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.AssemblyInfo.cs
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.dll
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.pdb
+/Users/edda/Projects/DataStructureImplementations/DSExceptions/obj/Debug/netcoreapp3.1/DSExceptions.genruntimeconfig.cache

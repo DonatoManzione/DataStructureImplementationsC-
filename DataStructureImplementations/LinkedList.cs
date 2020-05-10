@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DataStructures
 {
-    class LinkedList<E>
+    public class LinkedList<E> : IList<E>
     {
         public LinkedListNode<E> First { get; set; }
         public LinkedListNode<E> Last { get; set; }
@@ -60,45 +60,74 @@ namespace DataStructures
             LinkedListNode<E> currentNode = First;
             LinkedListNode<E> nextNode = First.Next;
 
-            if(First == null)
+            if (First == null)
             {
                 throw new EmptyListException();
             }
-            if(currentNode.Data.Equals(data))
+            if (currentNode.Data.Equals(data))
             {
                 First = nextNode;
                 Count--;
-            }else
+            }
+            else
             {
-                while(nextNode != null)
+                while (nextNode != null)
                 {
                     if (nextNode.Data.Equals(data))
                     {
                         currentNode.Next = nextNode.Next;
                         Count--;
                         break;
-                    }else
+                    }
+                    else
                     {
                         currentNode = nextNode;
                         nextNode = currentNode.Next;
                     }
                 }
-                throw new NoSuchElementException();
+                
             }
         }
-        
+
+        public LinkedListNode<E> Find(E data)
+        {
+            if (First == null)
+            {
+                throw new EmptyListException();
+            }
+            else
+            {
+                LinkedListNode<E> currentNode = First;
+                while (currentNode != null)
+                {
+                    if (currentNode.Data.Equals(data))
+                    {
+                        return currentNode;
+                    }
+                    else
+                    {
+                        currentNode = currentNode.Next;
+                    }
+                }
+                throw new NoSuchElementException();
+            }
+           
+
+        }
+
+
     }
     public class LinkedListNode<E>
     {
         public LinkedListNode<E> Next { get; set; }
         public E Data { get; set; }
-        
+
 
         public LinkedListNode(E Data)
         {
             this.Data = Data;
         }
-        LinkedListNode()
+        public LinkedListNode()
         {
 
         }
