@@ -7,5 +7,6 @@ namespace DataStructures
         void Add(E data);
         LinkedListNode<E> Find(E data);
         void Remove(E data);
+        void Clear();
     }
 }

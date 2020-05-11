@@ -94,6 +94,28 @@ namespace DataStructures
             throw new NoSuchElementException();
 
         }
+
+        public void Clear()
+        {
+            Count = 0;
+            Head = null;
+            Tail = null;
+        }
+
+        public override string ToString()
+        {
+            DoublyLinkedListNode<E> currentNode = Head;
+            string output = "{ ";
+            for (int i = 0; i < Count - 1; i++)
+            {
+                output += currentNode.Data + ", ";
+                currentNode = currentNode.Next;
+            }
+            output += currentNode.Data + " }";
+            return output;
+        }
+
+       
     }
     public class DoublyLinkedListNode<E> : LinkedListNode<E>
     {

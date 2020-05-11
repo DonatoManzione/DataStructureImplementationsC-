@@ -57,6 +57,7 @@ namespace DataStructures
                 InnerList.Head = null;
                 InnerList.Tail = null;
                 InnerList.Count = 0;
+
             }
             else
             {
@@ -66,6 +67,21 @@ namespace DataStructures
                 InnerList.Count--; //adjust the count variable to account for one more node
             }
             return tailNodeData;
+
+        }
+        public override string ToString()
+        {
+            DoublyLinkedListNode<E> currentNode = InnerList.Tail;
+            string output = "\n*********QUEUE***********\n";
+            for (int i = 0; i < Count; i++)
+            {
+                output += "----( " + currentNode.Data + " )";
+                currentNode = currentNode.Previous;
+            }
+           
+            output += "\n*********QUEUE***********\n";
+
+            return output;
 
         }
     }

@@ -20,7 +20,7 @@ namespace DataStructures
 
         public E Pop()
         {
-            
+
             if (Count == 0)
             {
                 throw new EmptyStackException();
@@ -47,7 +47,19 @@ namespace DataStructures
 
         }
 
+        public override string ToString()
+        {
+            DoublyLinkedListNode<E> currentNode = InnerList.Tail;
+            string output = "\n*********STACK***********\n";
+            for (int i = 0; i < Count; i++)
+            {
+                output += "( "+currentNode.Data + " )\n";
+                currentNode = currentNode.Previous;
+            }
+            output+= "*********STACK***********\n"; 
 
+            return output;
 
+        }
     }
 }
