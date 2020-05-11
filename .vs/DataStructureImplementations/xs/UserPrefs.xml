@@ -1,20 +1,21 @@
 ﻿<Properties StartupConfiguration="{735F7D31-B015-44E7-A00D-96942BF6F062}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructureImplementations/Queue.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructureImplementations/BinaryTree.cs">
     <Files>
       <File FileName="DataStructureImplementations/Program.cs" Line="42" Column="52" />
       <File FileName="DataStructureImplementations/LinkedList.cs" />
-      <File FileName="DataStructureImplementations/Stack.cs" />
-      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" />
+      <File FileName="DataStructureImplementations/Stack.cs" Line="32" Column="1" />
+      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" Line="31" Column="1" />
       <File FileName="DataStructureImplementations/IList.cs" />
-      <File FileName="DataStructureImplementations/Queue.cs" Line="49" Column="17" />
-      <File FileName="DataStructureImplementations/EmptyQueueException.cs" />
+      <File FileName="DataStructureImplementations/Queue.cs" Line="48" Column="27" />
+      <File FileName="DataStructureImplementations/EmptyQueueException.cs" Line="7" Column="11" />
+      <File FileName="DataStructureImplementations/BinaryTree.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DataStructureImplementations" expanded="True">
             <Node name="DataStructures" expanded="True">
-              <Node name="Queue.cs" selected="True" />
+              <Node name="BinaryTree.cs" selected="True" />
             </Node>
             <Node name="DSExceptions" expanded="True" />
           </Node>

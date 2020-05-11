@@ -42,11 +42,22 @@ namespace DataStructures
                 Console.WriteLine(queue.Dequeue());
             }
 
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.RootNode = new BinaryTreeNode<int>(1);
+            tree.RootNode.LeftChild = new BinaryTreeNode<int>(2);
+            tree.RootNode.RightChild = new BinaryTreeNode<int>(3);
+            tree.RootNode.LeftChild.LeftChild = new BinaryTreeNode<int>(4);
+            tree.RootNode.LeftChild.RightChild = new BinaryTreeNode<int>(5);
+            tree.RootNode.RightChild.LeftChild = new BinaryTreeNode<int>(6);
+            tree.RootNode.RightChild.RightChild = new BinaryTreeNode<int>(7);
+            tree.PostOrderTraversal(tree.RootNode);
+
+
         }
 
         static void PrintList(LinkedList<string> list)
         {
-            LinkedListNode<string> currentNode = list.First;
+            LinkedListNode<string> currentNode = list.Head;
             if (currentNode == null)
             {
                 throw new EmptyListException();
@@ -61,7 +72,7 @@ namespace DataStructures
 
         static void PrintList(DoublyLinkedList<string> list)
         {
-            DoublyLinkedListNode<string> currentNode = list.First;
+            DoublyLinkedListNode<string> currentNode = list.Head;
             if (currentNode == null)
             {
                 throw new EmptyListException();
@@ -75,7 +86,7 @@ namespace DataStructures
         }
         static void PrintListBackward(DoublyLinkedList<string> list)
         {
-            DoublyLinkedListNode<string> currentNode = list.Last;
+            DoublyLinkedListNode<string> currentNode = list.Tail;
             if (currentNode == null)
             {
                 throw new EmptyListException();

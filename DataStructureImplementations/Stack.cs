@@ -28,17 +28,17 @@ namespace DataStructures
             else
             {
                 InnerList.Count = Count = Count - 1;
-                E returnVal = InnerList.Last.Data;
+                E returnVal = InnerList.Tail.Data;
 
-                if (InnerList.Last.Previous != null)
+                if (InnerList.Tail.Previous != null)
                 {
-                    InnerList.Last = InnerList.Last.Previous;
-                    InnerList.Last.Next = null;
+                    InnerList.Tail = InnerList.Tail.Previous;
+                    InnerList.Tail.Next = null;
                 }
                 else
                 {
-                    InnerList.Last = null;
-                    InnerList.First = null;
+                    InnerList.Tail = null;
+                    InnerList.Head = null;
 
                 }
 

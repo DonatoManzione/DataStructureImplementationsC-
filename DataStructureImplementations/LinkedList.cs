@@ -3,32 +3,32 @@ namespace DataStructures
 {
     public class LinkedList<E> : IList<E>
     {
-        public LinkedListNode<E> First { get; set; }
-        public LinkedListNode<E> Last { get; set; }
+        public LinkedListNode<E> Head { get; set; }
+        public LinkedListNode<E> Tail { get; set; }
         public int Count { get; set; }
 
 
         public void Add(E data)
         {
             LinkedListNode<E> newNode = new LinkedListNode<E>(data);
-            if (First == null)
+            if (Head == null)
             {
-                First = Last = newNode;
-                First.Next = null;
+                Head = Tail = newNode;
+                Head.Next = null;
                 Count = 1;
             }
-            else if (First.Next == null)
+            else if (Head.Next == null)
             {
-                Last = newNode;
-                First.Next = Last;
-                Last.Next = null;
+                Tail = newNode;
+                Head.Next = Tail;
+                Tail.Next = null;
                 Count = 2;
             }
             else
             {
-                Last.Next = newNode;
-                Last = newNode;
-                Last.Next = null;
+                Tail.Next = newNode;
+                Tail = newNode;
+                Tail.Next = null;
                 Count++;
             }
 
@@ -36,16 +36,16 @@ namespace DataStructures
 
         public void Remove(E data)
         {
-            LinkedListNode<E> currentNode = First;
-            LinkedListNode<E> nextNode = First.Next;
+            LinkedListNode<E> currentNode = Head;
+            LinkedListNode<E> nextNode = Head.Next;
 
-            if (First == null)
+            if (Head == null)
             {
                 throw new EmptyListException();
             }
             if (currentNode.Data.Equals(data))
             {
-                First = nextNode;
+                Head = nextNode;
                 Count--;
             }
             else
@@ -70,13 +70,13 @@ namespace DataStructures
 
         public LinkedListNode<E> Find(E data)
         {
-            if (First == null)
+            if (Head == null)
             {
                 throw new EmptyListException();
             }
             else
             {
-                LinkedListNode<E> currentNode = First;
+                LinkedListNode<E> currentNode = Head;
                 while (currentNode != null)
                 {
                     if (currentNode.Data.Equals(data))
