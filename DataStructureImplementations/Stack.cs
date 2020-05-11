@@ -20,28 +20,31 @@ namespace DataStructures
 
         public E Pop()
         {
-            Count--;
-            if (InnerList.Count == 0)
+            
+            if (Count == 0)
             {
                 throw new EmptyStackException();
-            }else
+            }
+            else
             {
+                InnerList.Count = Count = Count - 1;
                 E returnVal = InnerList.Last.Data;
 
                 if (InnerList.Last.Previous != null)
                 {
                     InnerList.Last = InnerList.Last.Previous;
                     InnerList.Last.Next = null;
-                }else
+                }
+                else
                 {
                     InnerList.Last = null;
                     InnerList.First = null;
-                    
+
                 }
-                
+
                 return returnVal;
             }
-           
+
         }
 
 
