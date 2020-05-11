@@ -8,7 +8,7 @@ namespace DataStructures
         public DoublyLinkedListNode<E> First { get; set; }
         public DoublyLinkedListNode<E> Last { get; set; }
 
-        public void AddLast(E data)
+        public void Add(E data)
         {
             DoublyLinkedListNode<E> newNode = new DoublyLinkedListNode<E>(data);
             if (First == null)
@@ -30,53 +30,20 @@ namespace DataStructures
             {
                 Last.Next = newNode;
                 newNode.Previous = Last;
+                newNode.Next = null;
                 Last = newNode;
-                Last.Next = null;
-                
+
+
                 Count++;
             }
 
 
         }
-
-        public void AddFirst(E data)
-        {
-            DoublyLinkedListNode<E> newNode = new DoublyLinkedListNode<E>(data);
-            if (First == null)
-            {
-                First = Last = new DoublyLinkedListNode<E>(data);
-                First.Next = null;
-                Count = 1;
-            }
-            else if (First.Next == null)
-            {
-                Last = newNode;
-                First.Next = Last;
-                Last.Next = null;
-                Last.Previous = First;
-                Count = 2;
-            }
-            else
-            {
-                DoublyLinkedListNode<E> temp = First;
-                First = newNode;
-                First.Next = temp;
-                First.Previous = null;
-                Count++;
-            }
-
-
-
-        }
-
-        
 
         public void Remove(E data)
         {
-
             DoublyLinkedListNode<E> currentNode = First;
             DoublyLinkedListNode<E> nextNode = First.Next;
-
             if (First == null)
             {
                 throw new EmptyListException();
@@ -93,10 +60,15 @@ namespace DataStructures
                 {
                     if (nextNode.Data.Equals(data))
                     {
-
                         currentNode.Next = nextNode.Next;
-                        nextNode.Previous = currentNode.Previous;
-
+                        if (nextNode.Next != null)
+                        {
+                            nextNode.Next.Previous = currentNode;
+                        }
+                        else
+                        {
+                            Last = currentNode; //make sure that if you remove the last node, you change Last prop
+                        }
                         Count--;
                         break;
                     }
@@ -104,17 +76,12 @@ namespace DataStructures
                     {
                         currentNode = nextNode;
                         nextNode = currentNode.Next;
+                       
                     }
                 }
 
             }
         }
-
-
-
-
-
-
 
         public LinkedListNode<E> Find(E data)
         {

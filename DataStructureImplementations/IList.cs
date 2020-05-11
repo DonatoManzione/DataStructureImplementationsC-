@@ -5,8 +5,7 @@ namespace DataStructures
     {
         int Count { get; set; }
 
-        void AddFirst(E data);
-        void AddLast(E data);
+        void Add(E data);
         LinkedListNode<E> Find(E data);
         void Remove(E data);
     }

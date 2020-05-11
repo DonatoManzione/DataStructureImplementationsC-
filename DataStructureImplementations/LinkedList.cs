@@ -7,7 +7,7 @@ namespace DataStructures
         public LinkedListNode<E> Last { get; set; }
         public int Count { get; set; }
 
-        public void AddLast(E data)
+        public void Add(E data)
         {
             LinkedListNode<E> newNode = new LinkedListNode<E>(data);
             if (First == null)
@@ -31,29 +31,7 @@ namespace DataStructures
                 Count++;
             }
 
-
-        }
-
-        public void AddFirst(E data)
-        {
-            LinkedListNode<E> newNode = new LinkedListNode<E>(data);
-            if (First == null)
-            {
-                First = Last = new LinkedListNode<E>(data);
-                First.Next = null;
-                Count = 1;
-            }
-            else
-            {
-                LinkedListNode<E> temp = First;
-                First = newNode;
-                First.Next = temp;
-                Count++;
-            }
-
-
-
-        }
+         }
 
         public void Remove(E data)
         {
