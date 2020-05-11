@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace DataStructures
 {
     [Serializable]
-    internal class EmptyQueueException : Exception
+    public class EmptyQueueException : Exception
     {
         public EmptyQueueException()
         {
