@@ -14,15 +14,15 @@ namespace DataStructures
             //myList.Remove("Developer");
             //PrintList(myList);
 
-            //DoublyLinkedList<string> myList2 = new DoublyLinkedList<string>();
-            //myList2.Add("Print");
-            //myList2.Add("This");
-            //myList2.Add("Backward");
-            //myList2.Add("But not this");
-            //myList2.Remove("But not this");
+            DoublyLinkedList<string> myList2 = new DoublyLinkedList<string>();
+            myList2.Add("Print");
+            myList2.Add("This");
+            myList2.Add("Backward");
+            myList2.Add("But not this");
+            myList2.Remove("But not this");
 
 
-            //PrintListBackward(myList2);
+            PrintListBackward(myList2);
 
             //Stack<string> myStack = new Stack<string>();
             //myStack.Push("FIRST STACK EL");

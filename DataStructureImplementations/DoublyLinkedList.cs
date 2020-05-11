@@ -13,28 +13,21 @@ namespace DataStructures
             DoublyLinkedListNode<E> newNode = new DoublyLinkedListNode<E>(data);
             if (Head == null)
             {
+                //if there are no nodes yet, the tail and head will be the same, and their pointers will be null
                 Head = Tail = newNode;
                 Head.Previous = null;
                 Head.Next = null;
                 Count = 1;
             }
-            else if (Head.Next == null)
-            {
-                Tail = newNode;
-                Head.Next = Tail;
-                Tail.Next = null;
-                Tail.Previous = Head;
-                Count = 2;
-            }
+         
             else
             {
-                Tail.Next = newNode;
-                newNode.Previous = Tail;
-                newNode.Next = null;
-                Tail = newNode;
-
-
-                Count++;
+               
+                Tail.Next = newNode; //add new Next pointer to current Tail
+                newNode.Previous = Tail;//make current Tail the new node's Previous pointer
+                newNode.Next = null; //make the new node's Next pointer null, as it will become the new Tail
+                Tail = newNode; //Make newnode the new Tail
+                Count++;//Add to count
             }
 
 
@@ -48,11 +41,11 @@ namespace DataStructures
             {
                 throw new EmptyListException();
             }
-            if (currentNode.Data.Equals(data))
+            if (Head.Data.Equals(data))//account for the possibility that the node you're looking for is the Head
             {
-                Head = nextNode;
-                Head.Previous = null;
-                Count--;
+                Head = nextNode;//change Head to be the second node
+                Head.Previous = null;//eliminate reference to the former Head
+                Count--;//reduce Count value by one
             }
             else
             {
@@ -60,14 +53,14 @@ namespace DataStructures
                 {
                     if (nextNode.Data.Equals(data))
                     {
-                        currentNode.Next = nextNode.Next;
-                        if (nextNode.Next != null)
+                        currentNode.Next = nextNode.Next;//skip nextNode in currentNode's references
+                        if (nextNode.Next != null)//if nextnode isn't the tail, then adjust Previous pointer of the node AFTER nextnode
                         {
                             nextNode.Next.Previous = currentNode;
                         }
                         else
                         {
-                            Tail = currentNode; //make sure that if you remove the last node, you change Last prop
+                            Tail = currentNode; //make sure that if you remove the last node, you change Tail prop
                         }
                         Count--;
                         break;
