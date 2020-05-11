@@ -78,9 +78,7 @@ namespace DataStructures
         }
         public void Print(BinaryTreeNode<E> node)
         {
-            Console.Write("  /");
-            Console.Write(" /");
-            Console.Write(node.Data);
+            Console.WriteLine(node.Data);
             
         }
 
