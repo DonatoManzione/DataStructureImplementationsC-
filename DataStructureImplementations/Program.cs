@@ -24,7 +24,20 @@ namespace DataStructures
 
             PrintListBackward(myList2);
 
-
+            Stack<string> myStack = new Stack<string>();
+            myStack.Push("FIRST STACK EL");
+            myStack.Push("SECOND STACK EL");
+            myStack.Push("THIRD STACK EL");
+            while (myStack.Count > 0){
+                Console.WriteLine(myStack.Pop());
+            }
+            myStack.Push("FIRST STACK EL");
+            myStack.Push("SECOND STACK EL");
+            myStack.Push("THIRD STACK EL");
+            while (myStack.Count > 0)
+            {
+                Console.WriteLine(myStack.Pop());
+            }
 
         }
 

@@ -7,6 +7,7 @@ namespace DataStructures
         public LinkedListNode<E> Last { get; set; }
         public int Count { get; set; }
 
+
         public void Add(E data)
         {
             LinkedListNode<E> newNode = new LinkedListNode<E>(data);
@@ -31,7 +32,7 @@ namespace DataStructures
                 Count++;
             }
 
-         }
+        }
 
         public void Remove(E data)
         {
@@ -63,7 +64,7 @@ namespace DataStructures
                         nextNode = currentNode.Next;
                     }
                 }
-                
+
             }
         }
 
@@ -89,7 +90,7 @@ namespace DataStructures
                 }
                 throw new NoSuchElementException();
             }
-           
+
 
         }
 

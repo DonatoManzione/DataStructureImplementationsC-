@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{735F7D31-B015-44E7-A00D-96942BF6F062}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructureImplementations/DoublyLinkedList.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructureImplementations/Stack.cs">
     <Files>
-      <File FileName="DataStructureImplementations/Program.cs" Line="14" Column="42" />
-      <File FileName="DataStructureImplementations/LinkedList.cs" Line="89" Column="14" />
-      <File FileName="DataStructureImplementations/Stack.cs" Line="12" Column="10" />
-      <File FileName="DataStructureImplementations/NoSuchElementException.cs" Line="7" Column="11" />
-      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" Line="85" Column="22" />
-      <File FileName="DataStructureImplementations/IList.cs" Line="9" Column="21" />
+      <File FileName="DataStructureImplementations/Program.cs" Line="25" Column="30" />
+      <File FileName="DataStructureImplementations/LinkedList.cs" />
+      <File FileName="DataStructureImplementations/Stack.cs" Line="14" Column="1" />
+      <File FileName="DataStructureImplementations/DoublyLinkedList.cs" />
+      <File FileName="DataStructureImplementations/IList.cs" />
+      <File FileName="DataStructureImplementations/Queue.cs" Line="37" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DataStructureImplementations" expanded="True">
             <Node name="DataStructures" expanded="True">
-              <Node name="DoublyLinkedList.cs" selected="True" />
+              <Node name="Stack.cs" selected="True" />
             </Node>
             <Node name="DSExceptions" expanded="True" />
           </Node>
