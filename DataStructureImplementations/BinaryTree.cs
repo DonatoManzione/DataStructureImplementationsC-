@@ -39,6 +39,43 @@ namespace DataStructures
             }
         }
 
+        public void InsertNodeLeftmostPosition(BinaryTreeNode<E> parentNode, E data)
+        {
+            BinaryTreeNode<E> newNode = new BinaryTreeNode<E>(data);
+            if (parentNode == null)
+            {
+                parentNode = newNode;
+            }
+            else if (parentNode.LeftChild == null)
+            {
+                parentNode.LeftChild = newNode;
+            }else
+            {
+                InsertNodeLeftmostPosition(parentNode.LeftChild, data);
+                
+              
+            }
+            
+        }
+        public void InsertNodeRightmostPosition(BinaryTreeNode<E> parentNode, E data)
+        {
+            BinaryTreeNode<E> newNode = new BinaryTreeNode<E>(data);
+            if (parentNode == null)
+            {
+                parentNode = newNode;
+            }
+            else if (parentNode.RightChild == null)
+            {
+                parentNode.RightChild = newNode;
+            }
+            else
+            {
+                InsertNodeRightmostPosition(parentNode.RightChild, data);
+
+
+            }
+
+        }
         public void Print(BinaryTreeNode<E> node)
         {
             Console.WriteLine(node.Data);
