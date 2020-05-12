@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace DataStructures
 {
     public class DoublyLinkedList<E> : IList<E>
@@ -74,6 +76,11 @@ namespace DataStructures
                 }
 
             }
+        }
+
+        internal bool IsEmpty()
+        {
+            return Count == 0 && Head == null;
         }
 
         public LinkedListNode<E> Find(E data)

@@ -4,9 +4,66 @@ namespace DataStructures
     public class BinaryTree<E>
     {
         public BinaryTreeNode<E> RootNode { get; set; }
+        public BinaryTreeNode<E> BottommostNode { get; set; }
+       
         public BinaryTree()
         {
         }
+
+
+
+
+
+
+
+
+
+
+        public void Insert(E data)
+        {
+            BinaryTreeNode<E> newNode = new BinaryTreeNode<E>(data);
+
+            if(RootNode == null)
+            {
+                RootNode = newNode;
+                return;
+            }
+
+
+
+            Queue<BinaryTreeNode<E>> myQueue = new Queue<BinaryTreeNode<E>>();
+
+            myQueue.Enqueue(RootNode);
+
+            while (!myQueue.IsEmpty())
+            {
+                BinaryTreeNode<E> temp = myQueue.Dequeue();
+
+                if (temp.LeftChild == null)
+                {
+                    temp.LeftChild = newNode;
+                    break;
+                }else
+                {
+                    myQueue.Enqueue(temp.LeftChild);
+                }
+
+                if(temp.RightChild == null)
+                {
+                    temp.RightChild = newNode;
+                    break;
+                }else
+                {
+                    myQueue.Enqueue(temp.RightChild);
+                }
+            }
+
+        }
+
+
+
+
+
 
 
         public void PreOrderTraversal(BinaryTreeNode<E> node)
@@ -39,43 +96,9 @@ namespace DataStructures
             }
         }
 
-        public void InsertNodeLeftmostPosition(BinaryTreeNode<E> parentNode, E data)
-        {
-            BinaryTreeNode<E> newNode = new BinaryTreeNode<E>(data);
-            if (parentNode == null)
-            {
-                parentNode = newNode;
-            }
-            else if (parentNode.LeftChild == null)
-            {
-                parentNode.LeftChild = newNode;
-            }else
-            {
-                InsertNodeLeftmostPosition(parentNode.LeftChild, data);
-                
-              
-            }
-            
-        }
-        public void InsertNodeRightmostPosition(BinaryTreeNode<E> parentNode, E data)
-        {
-            BinaryTreeNode<E> newNode = new BinaryTreeNode<E>(data);
-            if (parentNode == null)
-            {
-                parentNode = newNode;
-            }
-            else if (parentNode.RightChild == null)
-            {
-                parentNode.RightChild = newNode;
-            }
-            else
-            {
-                InsertNodeRightmostPosition(parentNode.RightChild, data);
+             
+       
 
-
-            }
-
-        }
         public void Print(BinaryTreeNode<E> node)
         {
             Console.WriteLine(node.Data);
@@ -94,6 +117,7 @@ namespace DataStructures
         }
 
         public E Data { get; set; }
+        public BinaryTreeNode<E> Parent { get; set; }
         public BinaryTreeNode<E> LeftChild { get; set; }
         public BinaryTreeNode<E> RightChild { get; set; }
     }

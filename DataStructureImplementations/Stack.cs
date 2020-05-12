@@ -4,18 +4,18 @@ namespace DataStructures
     public class Stack<E>
     {
         private DoublyLinkedList<E> InnerList { get; set; }
-        public int Count { get; set; }
+        public int Count { get { return InnerList.Count; }  }
 
         public Stack()
         {
             InnerList = new DoublyLinkedList<E>();
-            Count = 0;
+          
         }
 
         public void Push(E data)
         {
             InnerList.Add(data);
-            Count++;
+            
         }
 
         public E Pop()
@@ -27,7 +27,7 @@ namespace DataStructures
             }
             else
             {
-                InnerList.Count = Count = Count - 1;
+                InnerList.Count--; 
                 E returnVal = InnerList.Tail.Data;
 
                 if (InnerList.Tail.Previous != null)
@@ -60,6 +60,11 @@ namespace DataStructures
 
             return output;
 
+        }
+
+        public bool IsEmpty()
+        {
+            return Count == 0;
         }
     }
 }

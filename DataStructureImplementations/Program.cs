@@ -42,6 +42,8 @@ namespace DataStructures
                 myStack.Pop();
                 Console.WriteLine(myStack);
             }
+
+            
             Queue<int> myQueue = new Queue<int>();
             myQueue.Enqueue(1);
             Console.WriteLine(myQueue);
@@ -60,60 +62,26 @@ namespace DataStructures
 
 
             BinaryTree<int> tree = new BinaryTree<int>();
-            tree.RootNode = new BinaryTreeNode<int>(1);
-            tree.InsertNodeLeftmostPosition(tree.RootNode,2);
-            tree.InsertNodeRightmostPosition(tree.RootNode, 3);
-            tree.InsertNodeLeftmostPosition(tree.RootNode, 4);
-            tree.InsertNodeRightmostPosition(tree.RootNode, 5);
+            tree.Insert(1);
+            tree.Insert(2);
+            tree.Insert(3);
+            tree.Insert(4);
+            tree.Insert(5);
+            tree.Insert(6);
+            tree.Insert(7);
+
             tree.InOrderTraversal(tree.RootNode);
+            Console.WriteLine("\n");
+            tree.PreOrderTraversal(tree.RootNode);
+            Console.WriteLine("\n");
+            tree.PostOrderTraversal(tree.RootNode);
+            Console.WriteLine("\n");
 
 
-        }
-
-        static void PrintList(LinkedList<string> list)
-        {
-            LinkedListNode<string> currentNode = list.Head;
-            if (currentNode == null)
-            {
-                throw new EmptyListException();
-            }
-            while (currentNode != null)
-            {
-                Console.WriteLine(currentNode.Data);
-                currentNode = currentNode.Next;
-            }
 
         }
 
-        static void PrintList(DoublyLinkedList<string> list)
-        {
-            DoublyLinkedListNode<string> currentNode = list.Head;
-            if (currentNode == null)
-            {
-                throw new EmptyListException();
-            }
-            while (currentNode != null)
-            {
-                Console.WriteLine(currentNode.Data);
-                currentNode = currentNode.Next;
-            }
-
-        }
-        static void PrintListBackward(DoublyLinkedList<string> list)
-        {
-            DoublyLinkedListNode<string> currentNode = list.Tail;
-            if (currentNode == null)
-            {
-                throw new EmptyListException();
-            }
-            while (currentNode != null)
-            {
-                Console.WriteLine(currentNode.Data);
-                currentNode = currentNode.Previous;
-            }
-
-        }
-
+        
     }
 
     
